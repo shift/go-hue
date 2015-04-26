@@ -22,10 +22,13 @@ type Lights struct {
 type Light struct {
 	Id int `json:"id,omitempty"`
 	Name string `json:"name"`
-	State State `json:"State,omitempty"`
-	Type string `json:"Type,omitempty"`
+	State State `json:"state,omitempty"`
+	Type string `json:"type,omitempty"`
 	ModelId string `json:"modelid,omitempty"`
+	UniqueId string `json:"uniqueid,omitempty"`
+	ManufacturerName string `json:"manufacturername,omitempty"`
 	SwVersion string `json:"swversion,omitempty"`
+        Pointsymbol string `json:"pointsymbol,omitempty"`
 }
 
 type State struct {
